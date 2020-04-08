@@ -30,7 +30,8 @@ go build -o mdtohtml ./package/
 ```
 
 **目录结构**：
-**markdown目录结构：**
+```
+#markdown目录结构：
 example/
 ├── Docker
 │   ├── docker-install.md
@@ -42,7 +43,7 @@ example/
 └── K8s
     └── kubectl-auto-completion.md
 
-**生成的HTML目录结构：**
+#生成的HTML目录结构：
 example-html/
 ├── Docker
 │   ├── docker-install.html
@@ -72,3 +73,4 @@ example-html/
     └── tag
         ├── auto-completion.html
         └── kubectl.html
+```
