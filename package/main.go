@@ -34,7 +34,7 @@ func main() {
 	tagMaps := make(map[string]map[string][]string)
 
 	for _, fi := range fis {
-		if fi.IsDir() {
+		if fi.IsDir() && !strings.HasPrefix(fi.Name(), ".") {
 			allCates = append(allCates, fi.Name())
 			fis2, err := ioutil.ReadDir(filepath.Join(srcDir, fi.Name()))
 			checkError(err)
